@@ -9,4 +9,4 @@ def unid_formatter(unid_url):
     formatted = (eight+delimiter+four1+delimiter+four2+delimiter+four3+delimiter+twelve)
     return formatted
 
-print(unid_formatter("https://msp.support.topdesk.net/tas/secure/person?unid=5df4d11066465752a14d2bf4bad2ec7c"))
+print(unid_formatter(""))
