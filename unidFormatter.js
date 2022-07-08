@@ -10,7 +10,6 @@ function unidFormatter() {
   twelve = unid.slice(20);
   delimiter = "-";
   formatted = eight + delimiter + four1 + delimiter + four2 + delimiter + four3 + delimiter + twelve;
-  return formatted;
   Clipboard.writeText(formatted)
 }
 
