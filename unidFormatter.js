@@ -1,6 +1,8 @@
-const unidUrl = document.getElementById("secretlink")
+notFormatted = document.getElementById("secretlink").href;
+console.log(notFormatted);
 
-function unidFormatter() {
+function unidFormatter(unidUrl) {
+  console.log(unidUrl);
   var delimiter, eight, formatted, four1, four2, four3, twelve, unid;
   unid = unidUrl.substring(unidUrl.indexOf('=') + 1);
   eight = unid.slice(0, 8);
@@ -10,8 +12,8 @@ function unidFormatter() {
   twelve = unid.slice(20);
   delimiter = "-";
   formatted = eight + delimiter + four1 + delimiter + four2 + delimiter + four3 + delimiter + twelve;
-  Clipboard.writeText(formatted)
-}
+  console.log(formatted);
+  navigator.clipboard.writeText(formatted);
+};
 
-unidFormatter.call("https://msp.support.topdesk.net/tas/secure/incident?unid=c79a2a32c19c5208903cc8e6459fc81c")
-
+unidFormatter(notFormatted)

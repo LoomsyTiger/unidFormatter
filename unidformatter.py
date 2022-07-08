@@ -9,4 +9,4 @@ def unid_formatter(unid_url):
     formatted = (eight+delimiter+four1+delimiter+four2+delimiter+four3+delimiter+twelve)
     return formatted
 
-print(unid_formatter("http://localhost/tas/secure/person?unid=2dfc497e45cf5f88bb7d8026e8163390"))
+print(unid_formatter("https://steltix.support.topdesk.net/tas/secure/operator?unid=7b71b2cfa9b14b5396d3e97123f6c42a"))
